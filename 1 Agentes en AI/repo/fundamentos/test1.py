@@ -9,7 +9,6 @@ load_dotenv()
 api_key = os.getenv('GOOGLE_AI_STUDIO_API_KEY')
 
 # Use the API key in your application
-# Use the API key in your application
 if api_key:
     print("api_key=" + api_key)  # or use it in your API calls
 else:
