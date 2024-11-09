@@ -1,1 +1,24 @@
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+Core Functionality
+User Query Handling
+AIPlanandExecute is designed to handle user queries specifically related to the EmpowerID system. For instance, if a user wants to create a new person in EmpowerID, the component interprets this request using OpenAI's LLM.
+
+Plan and Execute Logic
+AIPlanandExecute employs a "Plan and Execute" approach to process user requests. Upon receiving a query, it interacts with the EmpowerID system's API to understand the available functionalities and procedures.
+
+Planning Phase
+Based on the user's query and the capabilities of the EmpowerID system, AIPlanandExecute creates a plan comprising a series of steps. These steps typically involve calling specific API endpoints of the EmpowerID system that correspond to the actions required to fulfill the user's request.
+
+LLM used: GPT-4
+
+Execution Phase
+AIPlanandExecute takes over to perform the planned steps. This involves making calls to the EmpowerID API, executing actions, and retrieving responses.
+
+LLM used: GPT-3.5-TURBO-16k
+
+Plan Review and Adaptation
+After each step's execution, AIPlanandExecute evaluates the outcome and the remaining steps. This review process ensures that the plan stays relevant and effective in achieving the user's goal. If necessary, the plan is updated to accommodate changes or new information obtained during execution.
+
+LLM used: GPT-4
+
+User Interaction
+Throughout this process, AIPlanandExecute maintains interactive communication with the user. It provides updates, responses, and clarifications, ensuring a seamless and user-friendly experience.
